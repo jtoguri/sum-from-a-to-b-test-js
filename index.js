@@ -1,6 +1,9 @@
 
-function sum(fromN, toN) {
-  // Sum all the values from fromN up to toN
+function sum(a, b) {
+  if (a === b) {
+    return b;
+  }
+  return a + sum(a + 1, b);
 }
 
 module.exports = sum;
